@@ -66,3 +66,10 @@
 
 1. add a new `Error.js` file in the `pages` folder
 2. add the special `errorElement` property to the route definitions in `App.js` to render the `<ErrorPage>` component
+
+## 7. Working with Navigation Links (NavLink)
+
+1. replace the `<Link>` component with the `<NavLink>` component to let the link active after we click on it
+2. add the `className` prop to the `<NavLink>` component
+3. set a function to `className` where you pass to it the `isActive` property provided by `react-router-dom`
+4. add the `end` prop to the home link so that the CSS class applies only when the path ends with `/` and not when it begins with
