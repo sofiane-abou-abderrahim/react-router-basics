@@ -73,3 +73,9 @@
 2. add the `className` prop to the `<NavLink>` component
 3. set a function to `className` where you pass to it the `isActive` property provided by `react-router-dom`
 4. add the `end` prop to the home link so that the CSS class applies only when the path ends with `/` and not when it begins with
+
+## 8. Navigating Programmatically
+
+1. call the `useNavigate()` function imported from `react-router-dom` in `Home.js` to trigger a navigation action
+2. add a dummy `<button>` & define a new `navigateHandler` function
+3. trigger the `navigateHandler` upon a click
