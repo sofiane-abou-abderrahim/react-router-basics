@@ -79,3 +79,11 @@
 1. call the `useNavigate()` function imported from `react-router-dom` in `Home.js` to trigger a navigation action
 2. add a dummy `<button>` & define a new `navigateHandler` function
 3. trigger the `navigateHandler` upon a click
+
+## 9. Defining & Using Dynamic Routes
+
+1. add a list of products in `Products.js`
+2. load a separate product detail page for the different products
+   1. add a new `ProductDetail.js` file
+   2. in `App.js`, define a new router with a dynamic `path` segment/parameter with a `:productId` as a placeholder & an `element` to render `<ProductDetailPage>`
+   3. in `ProductDetail.js`, get hold of the actual value used instead of that `:productId` placeholder with help of the `useParams` hook imported from `react-router-dom`
