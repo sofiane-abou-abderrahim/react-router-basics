@@ -93,3 +93,11 @@
 1. add some links to the product details pages in `Products.js` with help of the `<Link>` component
 2. define a `PRODUCTS` array with products
 3. render the list of products dynamically with the dynamic path
+
+## 11. Understanding Relative & Absolute Paths
+
+1. in `App.js`, remove the `/` slash before the `path` property to have relative paths instead of absolute paths
+2. in `Products.js`, change the path of the `<Link>` as a relative path
+3. in `Home.js`, change the path of the `<Link>` a relative path
+4. in `ProductDetail.js`, add a new paragraph with a `<Link>` component
+5. use the special `relative` prop in the `<Link>` component & set it to `path` as a value to go back one segment from the path
