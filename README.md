@@ -101,3 +101,8 @@
 3. in `Home.js`, change the path of the `<Link>` a relative path
 4. in `ProductDetail.js`, add a new paragraph with a `<Link>` component
 5. use the special `relative` prop in the `<Link>` component & set it to `path` as a value to go back one segment from the path
+
+## 12. Working with Index Routes
+
+1. add the special `index` property to the home page & set it to `true` to turn it into an index route
+2. this index route feature is an alternative to `path: ''` that allows you to define the default route that should be loaded if the parent route is active
