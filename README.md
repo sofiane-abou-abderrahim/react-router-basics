@@ -87,3 +87,9 @@
    1. add a new `ProductDetail.js` file
    2. in `App.js`, define a new router with a dynamic `path` segment/parameter with a `:productId` as a placeholder & an `element` to render `<ProductDetailPage>`
    3. in `ProductDetail.js`, get hold of the actual value used instead of that `:productId` placeholder with help of the `useParams` hook imported from `react-router-dom`
+
+## 10. Adding Links for Dynamic Routes
+
+1. add some links to the product details pages in `Products.js` with help of the `<Link>` component
+2. define a `PRODUCTS` array with products
+3. render the list of products dynamically with the dynamic path
