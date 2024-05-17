@@ -31,3 +31,13 @@
 
 1. add a new `Products.js` component inside the `pages` folder
 2. in `App.js`, add a route for the `ProductsPage` component
+
+## 3. Exploring an Alternative Way of Defining Routes
+
+1. in `App.js`, call the `createRoutesFromElements` function imported from `react-router-dom`
+2. store its returned value in a constant called `routeDefinitions`
+3. add a `<Route>` component imported from `react-router-dom` as an argument to this function
+4. inside this `<Route>` component, add your nested route with a `path` & an `element` props
+5. call the `createBrowserRouter` function & pass the `routeDefinitions` constant to it as an argument
+6. store the returned value of this function to a constant named `router`
+7. pass this constant as a value to the `router` prop of the `<RouterProvider>` component
