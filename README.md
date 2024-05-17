@@ -41,3 +41,8 @@
 5. call the `createBrowserRouter` function & pass the `routeDefinitions` constant to it as an argument
 6. store the returned value of this function to a constant named `router`
 7. pass this constant as a value to the `router` prop of the `<RouterProvider>` component
+
+## 4. Navigating between Pages with Links
+
+1. don't use the `<a>` so that you don't send HTTP requests when navigating
+2. in `Home.js`, instead, use the `<Link>` component imported from `react-router-dom` to navigate to the other pages
