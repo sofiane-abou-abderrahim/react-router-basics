@@ -46,3 +46,18 @@
 
 1. don't use the `<a>` so that you don't send HTTP requests when navigating
 2. in `Home.js`, instead, use the `<Link>` component imported from `react-router-dom` to navigate to the other pages
+
+## 5. Layouts & Nested Routes
+
+1. add a navigation bar to navigate to the pages
+   1. add a new `components` folder
+   2. inside of it, add a new `MainNavigation.js` file
+2. add some layout that wraps all these routes to render the main navigation
+   1. add a new `Root.js` file in the `pages` folder
+   2. add a new root in `App.js` & render the `<RootLayout>` component
+   3. add a special `children` property to wrap the other routes with this `<RootLayout>` component
+   4. in `Root.js`, use the `Outlet` component imported from `react-router-dom` to define where these child routes should be rendered
+   5. include the `<MainNavigation>` component above the `<Outlet>` component in `Root.js`
+3. apply some styling
+   1. add a new `Root.module.css` file
+   2. add a new `MainNavigation.module.css` file

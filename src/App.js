@@ -1,32 +1,25 @@
-import {
-  // Route,
-  RouterProvider,
-  createBrowserRouter
-  // createRoutesFromElements
-} from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import HomePage from './pages/Home';
 import ProductsPage from './pages/Products';
-
-// const routeDefinitions = createRoutesFromElements(
-//   <Route>
-//     <Route path="/" element={<HomePage />} />
-//     <Route path="/products" element={<ProductsPage />} />
-//   </Route>
-// );
+import RootLayout from './pages/Root';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage />
-  },
-  {
-    path: '/products',
-    element: <ProductsPage />
+    element: <RootLayout />,
+    children: [
+      {
+        path: '/',
+        element: <HomePage />
+      },
+      {
+        path: '/products',
+        element: <ProductsPage />
+      }
+    ]
   }
 ]);
-
-// const router = createBrowserRouter(routeDefinitions);
 
 function App() {
   return <RouterProvider router={router} />;
