@@ -61,3 +61,8 @@
 3. apply some styling
    1. add a new `Root.module.css` file
    2. add a new `MainNavigation.module.css` file
+
+## 6. Showing Error Pages with errorElement
+
+1. add a new `Error.js` file in the `pages` folder
+2. add the special `errorElement` property to the route definitions in `App.js` to render the `<ErrorPage>` component
