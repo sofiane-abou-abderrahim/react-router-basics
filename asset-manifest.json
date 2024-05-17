@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-router-basics/static/css/main.d27243fb.css",
-    "main.js": "/react-router-basics/static/js/main.f7bddbcf.js",
+    "main.js": "/react-router-basics/static/js/main.bac0f38c.js",
     "index.html": "/react-router-basics/index.html",
     "main.d27243fb.css.map": "/react-router-basics/static/css/main.d27243fb.css.map",
-    "main.f7bddbcf.js.map": "/react-router-basics/static/js/main.f7bddbcf.js.map"
+    "main.bac0f38c.js.map": "/react-router-basics/static/js/main.bac0f38c.js.map"
   },
   "entrypoints": [
     "static/css/main.d27243fb.css",
-    "static/js/main.f7bddbcf.js"
+    "static/js/main.bac0f38c.js"
   ]
 }
