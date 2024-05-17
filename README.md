@@ -26,3 +26,8 @@
    2. use the `RouterProvider` component imported from `react-router-dom` to tell React that this `/` router should be loaded & should render the appropriate pages to the screen
    3. set to it the special `router` prop & pass to it the `router` constant as a value
 7. run `npm start` to start the development server to see the content of the `<HomePage>` component rendered by the `/` router
+
+## 2. Adding a Second Route
+
+1. add a new `Products.js` component inside the `pages` folder
+2. in `App.js`, add a route for the `ProductsPage` component
